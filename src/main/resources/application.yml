@@ -1,0 +1,24 @@
+server:
+    port: 8080
+    servlet :
+       contextPath: /springdata
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+  hikari:
+      poolName: HikariPoolZZZ
+      connectionTimeout: '20000'
+      maximumPoolSize: '5'
+logging:
+  level:
+    org:
+      springframework: INFO
+    com:
+      mkyong: INFO
+      zaxxer: DEBUG
+    root: ERROR
