@@ -10,6 +10,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
   hikari:
       poolName: HikariPoolZZZ
       connectionTimeout: '20000'
